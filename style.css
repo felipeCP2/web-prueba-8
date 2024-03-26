@@ -1,0 +1,485 @@
+/*<!--Seteos iniciales __________________________________________________________________________________________________________________________________________________________________________________-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--______________________________________________________________________________________________________________________________________________________________________________________-->*/
+@media (max-width: 100000px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+  }
+
+  .contenedor-general {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  /*links..........................................................................................*/
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: unset;
+  }
+
+  /*Nav............................................................................................*/
+  nav {
+    background-color: rgb(16, 93, 145);
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
+  /*Link wsp flotante............................................................................................*/
+  .link-wsp-flotante {
+    height: fit-content;
+    position: fixed;
+    bottom: 3rem;
+    right: 3em;
+    background-color: rgb(25, 184, 25);
+    border: 0.5rem rgb(25, 184, 25) solid;
+    box-shadow: 0.1rem 0.1rem 0.5rem black;
+    border-radius: 100%;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-logo-wsp2 {
+    height: 5rem;
+  }
+}
+
+/*<!--Contenido de la web __________________________________________________________________________________________________________________________________________________________________________________-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--______________________________________________________________________________________________________________________________________________________________________________________-->*/
+
+/*MAIN____________________________________________________________________________________________________________*/
+@media (max-width: 100000px) {
+  main {
+    height: fit-content;
+    padding: 0rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    /*background-image: url(./img/escultura-justicia.jpg);*/
+    background-size: 100%;
+    background-color: rgb(1, 27, 44);
+    color: rgb(240, 248, 255);
+  }
+
+  .contenedor-main {
+    height: 100%;
+    margin: 0;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  @media (max-width: 800px) {
+    .contenedor-main {
+      display: contents;
+    }
+  }
+
+  .subconenedor-main {
+    background-color: rgba(0, 255, 255, 0);
+    border-radius: 10px;
+    height: 100%;
+  }
+
+  @media (max-width: 800px) {
+    .subconenedor-main {
+      border-radius: 0;
+    }
+  }
+
+  /*Subcontenedor-main1..................................................................*/
+  .sc-m1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    height: 100%;
+  }
+
+  .img-logo-principal {
+    height: 10rem;
+  }
+
+  @media (max-width: 350px) {
+    .img-logo-principal {
+      width: 90vw;
+      height: auto;
+    }
+  }
+
+  .sc-m1 p {
+    padding: 1rem;
+    color: rgba(243, 234, 234, 0.781);
+    border-radius: 10px;
+    font-weight: 100;
+    background-color: rgba(34, 90, 116, 0);
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  .sc-m1 span {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+  }
+
+  .contenedor-boton-contáctanos {
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(0, 0, 255, 0);
+    margin: 0 auto 0 auto;
+  }
+  .boton-contáctanos {
+    margin: 0 auto 0 auto;
+    display: inline-block;
+    padding: 1rem;
+    border: solid white 0.1rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0);
+  }
+
+  .boton-contáctanos:hover {
+    background-color: rgb(16, 93, 145);
+    transition: 0.6s;
+  }
+  /*Subcontenedor-main2..................................................................*/
+  .sc-m2 {
+    grid-row: 1/2;
+    color: rgb(14, 14, 107);
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    height: fit-content;
+    font-size: 1.75rem;
+  }
+
+  .img-foto-perfil {
+    height: 15rem;
+    border: solid 0.5rem rgba(40, 95, 131, 0.473);
+    border-radius: 100%;
+    float: right;
+  }
+
+  .sc-m2 p {
+    margin-top: 1.8rem;
+  }
+
+  .datos-de-contacto {
+    list-style: none;
+    padding: 1rem 0 0 2rem;
+  }
+
+  .datos-de-contacto li a {
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: rgba(127, 255, 212, 0);
+  }
+
+  .icono1 {
+    font-size: 2.8rem;
+  }
+
+  /*Subcontenedor-main3..................................................................*/
+  .sc-m3 {
+    padding: 2rem;
+    grid-row: 2/3;
+    background-color: rgb(16, 93, 145);
+  }
+
+  .sc-m3 ul {
+    padding-top: 2rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .sc-m3 li a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.164);
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  }
+
+  .sc-m3 li a:hover {
+    background-color: rgba(0, 255, 255, 0.397);
+  }
+
+  .iconos2 {
+    font-size: 1.7rem;
+  }
+}
+
+/*Sección referencias____________________________________________________________________________________________________________*/
+@media (max-width: 100000px) {
+  .sección-referencias {
+    background-color: rgba(16, 93, 145, 0.226);
+    padding: 2rem;
+    height: fit-content;
+  }
+
+  .contenedor-referencias {
+    width: fit-content;
+    height: fit-content;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1000px) {
+    .contenedor-referencias {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .contenedor-referencias {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .contenedor-referencias div {
+    min-height: fit-content;
+    min-width: 30vw;
+    margin: 1rem;
+    padding: 3rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+
+  .contenedor-referencias ul {
+    list-style: none;
+  }
+
+  .contenedor-referencias li:nth-child(1) {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 350px) {
+    .contenedor-referencias li:nth-child(1) {
+      flex-direction: column;
+    }
+  }
+
+  .img-estrellitas {
+    height: 2rem;
+  }
+}
+
+/*Sección Contáctanos____________________________________________________________________________________________________________*/
+@media (max-width: 100000px) {
+  .sección-contáctanos {
+    margin-top: 4rem;
+    height: fit-content;
+  }
+  /*Contenedor contactanos (general). . . . . . . . . . . . . . . . */
+  .contenedor-contáctanos {
+    color: aliceblue;
+    background-color: rgb(16, 93, 145);
+    border-radius: 10px;
+    margin: 0 auto 0 auto;
+    width: fit-content;
+    padding: 2rem;
+    display: flex;
+  }
+
+  @media (max-width: 940px) {
+    .contenedor-contáctanos {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .contenedor-contáctanos {
+      width: 100vw;
+      border-radius: 0;
+    }
+  }
+
+  /*Contenedor información. . . . . . . . . . . . . . . . . . . . . */
+  .contenedor-información {
+    border-radius: 10px;
+    background-color: rgba(23, 117, 179, 0);
+    margin: 0 auto 0 auto;
+    width: fit-content;
+    padding: 2rem;
+  }
+
+  .img-logo-contáctanos {
+    height: 7rem;
+  }
+
+  @media (max-width: 350px) {
+    .img-logo-contáctanos {
+      width: 80%;
+      height: auto;
+    }
+  }
+
+  .contenedor-información p {
+    margin-top: 1rem;
+    width: 40rem;
+    line-height: 3rem;
+    color: rgba(240, 248, 255, 0.795);
+  }
+
+  @media (max-width: 500px) {
+    .contenedor-información p {
+      width: 80vw;
+    }
+  }
+
+  .contenedor-información span {
+    color: rgb(240, 248, 255);
+    font-weight: 600;
+  }
+
+  /*Contenedor formulario. . . . . . . . . . . . . . . . . . . . . */
+  .contenedor-formulario {
+    border-radius: 10px;
+    background-color: rgb(23, 116, 179);
+    margin: 0 auto 0 auto;
+    width: fit-content;
+    padding: 2rem;
+  }
+
+  @media (max-width: 350px) {
+    .contenedor-formulario {
+      padding: 0;
+    }
+  }
+
+  label,
+  input,
+  textarea {
+    display: block;
+    width: 40rem;
+  }
+
+  @media (max-width: 500px) {
+    label,
+    input,
+    textarea {
+      width: 80vw;
+    }
+  }
+
+  label {
+    color: aliceblue;
+  }
+
+  input,
+  textarea {
+    height: 2.5rem;
+    font-family: sans-serif;
+    background-color: rgba(241, 241, 241, 0.856);
+    border: solid black 0.1rem;
+    padding: 0.5rem;
+  }
+
+  input:focus,
+  textarea:focus {
+    border: solid black 0.1rem;
+    background-color: white;
+  }
+
+  textarea {
+    height: 10rem;
+  }
+}
+
+/*footer____________________________________________________________________________________________________________*/
+@media (max-width: 100000px) {
+  footer {
+    color: rgba(240, 248, 255, 0.568);
+    height: fit-content;
+    padding: 2rem;
+    background-color: rgb(5, 42, 67);
+    margin-top: 4rem;
+    position: relative;
+  }
+
+  .img-logo-footer {
+    height: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .contenedor-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 550px) {
+    .contenedor-footer {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .contenedor-footer span {
+    color: aliceblue;
+    font-weight: 400;
+  }
+
+  .map-footer {
+    padding: 4rem;
+    height: 35rem;
+    width: 35rem;
+    display: none;
+  }
+
+  .contenedor-footer div {
+    margin-top: 2rem;
+  }
+
+  footer a {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .contenedor-derechos-reservados {
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .p-derechos-reservados {
+    display: block;
+    width: fit-content;
+    font-size: 1.3rem;
+    margin: 0 auto 0 auto;
+  }
+}
